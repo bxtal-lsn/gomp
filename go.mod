@@ -1,4 +1,4 @@
-module gomp
+module github.com/bxtal-lsn/gomp-multipass
 
 go 1.22.2
 
