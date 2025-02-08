@@ -15,7 +15,7 @@ var mountCmd = &cobra.Command{
 	Mounts a folder from the host system into a Multipass instance.
 
 	Example:
-	  multipass-cli mount /home/user/my-data my-instance:/mnt/shared
+	  gomp mount /home/user/my-data my-instance:/mnt/shared
 	
 	This is equivalent to:
 	  multipass mount /home/user/my-data my-instance:/mnt/shared

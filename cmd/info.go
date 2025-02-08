@@ -19,7 +19,7 @@ var infoCmd = &cobra.Command{
 	  - Running state
 	
 	Example:
-	  multipass-cli info my-instance
+	  gomp info my-instance
 
 `, Args: cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

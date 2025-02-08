@@ -18,13 +18,13 @@ var deleteCmd = &cobra.Command{
 	
 	Examples:
 	  # Delete a single instance:
-	  multipass-cli delete my-instance
+	  gomp delete my-instance
 	
 	  # Delete multiple instances:
-	  multipass-cli delete instance1 instance2
+	  gomp delete instance1 instance2
 	
 	  # Delete ALL instances (WARNING: Irreversible!):
-	  multipass-cli delete --all
+	  gomp delete --all
 
 `, Args: cobra.ArbitraryArgs,
 	Run: func(cmd *cobra.Command, args []string) {

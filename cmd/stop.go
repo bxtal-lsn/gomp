@@ -14,7 +14,7 @@ var stopCmd = &cobra.Command{
 	Stops a currently running Multipass instance.
 
 	Example:
-	  multipass-cli stop my-instance
+	  gomp stop my-instance
 `,
 	Args: cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

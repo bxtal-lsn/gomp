@@ -14,7 +14,7 @@ var startCmd = &cobra.Command{
 	Starts one or more stopped Multipass instances.
 
 	Example:
-	  multipass-cli start my-instance
+	  gomp start my-instance
 
 `, Args: cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

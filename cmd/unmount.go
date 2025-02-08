@@ -15,7 +15,7 @@ var unmountCmd = &cobra.Command{
 	Unmounts a folder that was previously mounted into a Multipass instance.
 
 	Example:
-	  multipass-cli unmount my-instance:/mnt/shared
+	  gomp unmount my-instance:/mnt/shared
 
 `,
 	Args: cobra.ExactArgs(1),

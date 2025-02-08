@@ -16,10 +16,10 @@ var execCmd = &cobra.Command{
 
 	Examples:
 	  # Run 'ls -l' inside an instance:
-	  multipass-cli exec my-instance ls -l
+	  gomp exec my-instance ls -l
 	
 	  # Run a shell command:
-	  multipass-cli exec my-instance bash -c "echo Hello World"
+	  gomp exec my-instance bash -c "echo Hello World"
 	
 	This is equivalent to:
 	  multipass exec my-instance ls -l

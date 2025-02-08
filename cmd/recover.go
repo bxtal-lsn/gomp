@@ -15,10 +15,10 @@ var recoverCmd = &cobra.Command{
 	Restores an instance that was deleted but not purged.
 
 	Example:
-	  multipass-cli recover my-instance
+	  gomp recover my-instance
 	
 	To permanently delete an instance, use:
-	  multipass-cli delete my-instance --purge
+	  gomp delete my-instance --purge
 	
 `, Args: cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {

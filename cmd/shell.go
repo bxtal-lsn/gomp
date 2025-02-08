@@ -15,7 +15,7 @@ var shellCmd = &cobra.Command{
 	Opens a shell session inside a running Multipass instance.
 
 	Example:
-	  multipass-cli shell my-instance
+	  gomp shell my-instance
 
 	This is equivalent to:
 	  multipass shell my-instance

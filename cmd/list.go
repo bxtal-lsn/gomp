@@ -18,7 +18,7 @@ var listCmd = &cobra.Command{
 	  - Memory & CPU allocation
 	
 	Example:
-	  multipass-cli list
+	  gomp list
 
 `, Run: func(cmd *cobra.Command, args []string) {
 		checkMultipass()

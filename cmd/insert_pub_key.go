@@ -17,8 +17,8 @@ var insertPubKeyCmd = &cobra.Command{
 ~/.ssh/authorized_keys file of one or more Multipass instances.
 
 Example:
-  <binary-name> insert-pub-key my-instance
-  <binary-name> insert-pub-key instance1 instance2 instance3
+  gomp insert-pub-key my-instance
+  gomp insert-pub-key instance1 instance2 instance3
 `,
 	Args: cobra.MinimumNArgs(1),
 	Run:  insertPubKey,

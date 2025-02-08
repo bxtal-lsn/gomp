@@ -23,10 +23,10 @@ var launchCmd = &cobra.Command{
 	
 	Examples:
 	  # Launch a single instance with default settings:
-	  multipass-cli launch
+	  gomp launch
 	  
 	  # Launch multiple instances with shared config:
-	  multipass-cli launch
+	  gomp launch
 	  > Enter instance names: test1 test2 test3
 	  > Use the same config for all instances? yes
 	  > Memory: 4GB
@@ -34,7 +34,7 @@ var launchCmd = &cobra.Command{
 	  > CPUs: 2
 	
 	  # Launch instances with different configs:
-	  multipass-cli launch
+	  gomp launch
 	  > Enter instance names: test1 test2
 	  > Use the same config for all instances? no
 	  > Configuring test1...

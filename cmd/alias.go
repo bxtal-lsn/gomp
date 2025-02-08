@@ -18,10 +18,10 @@ var aliasCmd = &cobra.Command{
 	
 	Examples:
 	  # Create an alias for updating packages:
-	  multipass-cli alias update="sudo apt update && sudo apt upgrade -y"
+	  gomp alias update="sudo apt update && sudo apt upgrade -y"
 	
 	  # Create an alias for starting a web server:
-	  multipass-cli alias start-web="systemctl start nginx"
+	  gomp alias start-web="systemctl start nginx"
 	
 	To remove an alias, use:
 	  unalias <alias-name>
