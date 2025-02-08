@@ -51,7 +51,7 @@ var launchCmd = &cobra.Command{
 		checkMultipass()
 
 		// Ask for server names
-		fmt.Print("Enter instance names (space-separated): ")
+		fmt.Print("🐧 Enter instance names (space-separated): ")
 		scanner := bufio.NewScanner(os.Stdin)
 		scanner.Scan()
 		names := strings.Fields(scanner.Text())
