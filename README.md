@@ -1,8 +1,8 @@
-# GOMP
+# gomp (go-multipass)
 
 ## Overview
 
-Multipass-CLI is a lightweight Go-based command-line interface (CLI) tool that simplifies the management of Ubuntu instances in Multipass. This CLI provides an intuitive way to create, manage, and configure Multipass instances using go install or prebuilt binaries.
+gomp is a lightweight go-based cli tool that simplifies the management of Ubuntu instances in Multipass.
 
 ## Features
 
@@ -28,84 +28,66 @@ Multipass-CLI is a lightweight Go-based command-line interface (CLI) tool that s
 
 [1] Install via Go
 ```bash
-go install github.com/your-username/multipass-cli@latest
+go install github.com/bxtal-lsn/gomp@latest
 ```
 
-This installs the binary to $GOPATH/bin/multipass-cli.
+This installs the binary to $GOPATH/bin/gomp.
 
 [2] Download Prebuilt Binaries
 
-Visit the GitHub Releases page and download the appropriate binary for your OS.
-
-**Linux/macOS**
-```bash
-curl -L -o gomp https://github.com/bxtal-lsn/gomp-multipass/releases/download/vo.0.1/gomp-multipass-linux
-chmod +x gomp
-mv gomp /usr/local/bin/
-```
-
-**Windows**
-
-Download gomp.exe
-
-Move it to a folder in PATH
-
-Run:
-```ps1
-gomp.exe
-```
+Visit the [GitHub Releases page](https://github.com/bxtal-lsn/gomp/releases/) and download the appropriate binary for your OS, and move it to PATH.
 
 ## Usage
 
-1️⃣ Launch a New Instance
+1 launch a New Instance
 
-multipass-cli launch
+gomp launch
 
 Follow the prompts to specify names, memory, storage, CPUs, and cloud-init configuration.
 
 2️⃣ Start an Instance
 
-multipass-cli start my-instance
+gomp start my-instance
 
 3️⃣ Stop an Instance
 
-multipass-cli stop my-instance
+gomp stop my-instance
 
 4️⃣ Delete an Instance
 
-multipass-cli delete my-instance
+gomp delete my-instance
 
 To delete all instances:
 
-multipass-cli delete --all
+gomp delete --all
 
 5️⃣ Open a Shell in an Instance
 
-multipass-cli shell my-instance
+gomp shell my-instance
 
 6️⃣ Execute Commands in an Instance
 
-multipass-cli exec my-instance ls -l
+gomp exec my-instance ls -l
 
 7️⃣ Get Instance Info
 
-multipass-cli info my-instance
+gomp info my-instance
 
 8️⃣ Recover a Deleted Instance
 
-multipass-cli recover my-instance
+gomp recover my-instance
 
 9️⃣ Mount a Folder into an Instance
 
-multipass-cli mount /host/path my-instance:/mnt/path
+gomp mount /host/path my-instance:/mnt/path
 
 🔟 Unmount a Folder
 
-multipass-cli unmount my-instance:/mnt/path
+gomp unmount my-instance:/mnt/path
 
-🔹 Create an Alias for a Command
+[11] Create an Alias for a Command
 
-multipass-cli alias update="sudo apt update && sudo apt upgrade -y"
+gomp alias update="sudo apt update && sudo apt upgrade -y"
 
 ## Cloud-Init Example Files
 
@@ -128,14 +110,3 @@ packages:
 runcmd:
   - systemctl enable --now docker
   - usermod -aG docker ubuntu
-
-### Development Setup
-
-git clone https://github.com/your-username/multipass-cli.git
-cd multipass-cli
-go mod tidy
-go build -o multipass-cli
-
-Run the CLI locally:
-
-go run . launch
