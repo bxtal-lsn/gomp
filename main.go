@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/bxtal-lsn/gomp-multipass/cmd"
+	"github.com/bxtal-lsn/gomp/cmd"
 )
 
 func main() {
